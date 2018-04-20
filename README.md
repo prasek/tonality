@@ -1,7 +1,7 @@
 # tonality
 A simple Python audio classifier to predict speech or music using sklearn, pandas, and librosa.
 
-Audio features are extracted using segmentation and a sliding FFT window that generates metrics for narrow frames of audio. Summary statistics are calculated for the frames, and the frames are binned into histograms for each feature categories and then normalized by the total frame count such that the sum of all bins in a histogram equals one (representing the percentage of time spent in each bin regardless of audio file length).
+Audio features are extracted using segmentation and a sliding FFT window that generates metrics for narrow frames of audio. Summary statistics are calculated for the frames, and the frames are binned into histograms for each feature category.
 
 The combined feature stats create a 51-dimension audio feature vector, that is Gaussian normalized and min/max scaled for use by sklearn, and exported by pandas to features.csv.
 
