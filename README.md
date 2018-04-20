@@ -5,7 +5,7 @@ Audio features are extracted using segmentation and a sliding FFT window that ge
 
 The combined feature stats create a 51-dimension audio feature vector, that is Gaussian normalized and min/max scaled for use by sklearn, and exported by pandas to features.csv.
 
-The auto-select feature uses sklearn’s recursive feature elimination (RFE) algorithm, with cross validation (CV), to select an optimal set of features and rank them. Auto-selected features can be manually fine-tuned by selecting or deselecting features in the program. You can manually tune the audio features used in the GUI.
+The auto-select feature uses sklearn’s recursive feature elimination (RFE) algorithm, with cross validation (CV), to select an optimal set of features and rank them. Auto-selected features can be manually fine-tuned by selecting or deselecting features in the GUI.
 
 Cross-validated SVM test results are created with sklearn’s SVM package to evaluate feature selection.
 
