@@ -9,4 +9,8 @@ The auto-select feature uses sklearn’s recursive feature elimination (RFE) alg
 
 Cross-validated SVM test results are created with sklearn’s SVM package to evaluate feature selection.
 
-Make builds a self-contained MacOS app and requires python 2.7, pip, and virtualenv.
+A self-contained MacOS app can be built with make. You'll need python 2.7, pip, and virtualenv.
+
+```sh
+$ make
+```
