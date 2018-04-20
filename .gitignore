@@ -1,0 +1,6 @@
+*.pyc
+audio
+build
+dist
+venv
+.eggs/*
